@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'ONE DAY';
+    src: url('fonts/ONEDAY.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+html,body{
+    margin: 0 auto;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.mode-set{
+    text-align: center;
+}
+.mode-set i{
+    color:cyan;
+    font-size: 16px;
+    margin: 5px;
+}
+.mode-set p{
+    margin: 15px; 
+    color:#FFF222;
+    font-size:18px;
+    font-weight: bold;
+}
+.heading img{
+    height: 8rem;
+}
+h2{
+    background-color: rgb(168, 168, 168);
+    width: 38%;
+    border: 5px solid #F4C724;
+    border-radius: 5px;
+}
+h1 {
+    font-family: ONE DAY;
+    background: -webkit-linear-gradient(red,violet, blue);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: blanchedalmond;
+  }
+video{
+    padding:13px;
+    border-radius: 10px;
+    background-image: url('img/scanbg2.png');
+    background-size: 330px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    
+}
+.alert{
+    padding:2px;
+}
+/* Font Awesome */
+.fa-times-circle{
+    color: red;
+}
+.fa-check-circle{
+    color: green;
+}
+.fa-exclamation-triangle{
+    color: yellow;
+}
+#result{
+    text-align: center;
+    font-size: 20px;
+    width: 50%;
+    margin-left: 25%;
+    border:2px solid red;
+    background-image:  linear-gradient(to right, #200122, #6f0000);
+    padding: 2px;
+    border-radius: 5px;
+    color: white;
+}
+form{
+    margin: 0 auto;
+    width: 20rem;
+}
+form label{
+    color: white;
+    font-size: 35px;
+    color: #000000;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+}
+#Mark{
+    font-size: 15px !important;
+    margin-top: 20px;
+    padding: 12px 48px 12px 48px;
+    border-radius: 15px;
+}
+input[type=text]{
+    border: 5px solid #FAD02E;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+@media screen and (max-width: 768px) {
+    .display-1{
+        font-size: 48px !important;
+    }
+    .overlay{
+        width: 75% !important;
+    }
+    .tagline{
+        margin-top: 43px !important;
+        margin-left: 12px !important;
+        letter-spacing: 2px !important;
+    }
+    video{
+    width: 350px;
+    height: 350px;   
+    background-image: url('img/scanbg2.png');
+    background-size: 350px; 
+    margin-left: 10px;
+    margin-right: 10px;
+    }
+  }
