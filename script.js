@@ -28,21 +28,19 @@ $(document).ready(function(){
             }, 1000);
         console.log("You are using SuperFast Mode");
     }
-    $(document).on('click','.btn-success',function(){
+    $('form').submit(function(event) {
         id_js = $('#ID_TXT').val();
-        $('form').submit(function(event) {
-                $.ajax({
-                    url:'server.php',
-                    type:'POST',
-                    data:{
-                        'Mark':1,
-                        'id':id_js,
-                    },
-                    success: function(response){
-                        $('#result').html(response);
-                    }
-                });
-            event.preventDefault();    
-        });  
+        $.ajax({
+            url:'server.php',
+            type:'POST',
+            data:{
+                'Mark':1,
+                'id':id_js,
+            },
+            success: function(response){
+                $('#result').html(response);
+            }
+        });
+        event.preventDefault();    
     });
 });
